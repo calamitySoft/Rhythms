@@ -19,7 +19,7 @@ class Metronome {
     var beatListeners = [MetronomeBeatListener]()
     
     /// A display link that keeps calling the `updateFrame` method on every screen refresh.
-    private lazy var displayLink: CADisplayLink = CADisplayLink(target: self, selector: Selector("tick"))
+    private lazy var displayLink: CADisplayLink = CADisplayLink(target: self, selector: "tick:")
     
     
     init(config: MetronomeConfiguration) {
@@ -28,17 +28,15 @@ class Metronome {
     
     // MARK: - Tick-tock
     func start() {
-        self.displayLink = CADisplayLink(target: self, selector: Selector(tick))
-        self.displayLink.frameInterval = frameInterval
-        self.displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
+        self.displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSDefaultRunLoopMode)
+        self.displayLink.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSDefaultRunLoopMode)
     }
     
     func stop() {
-        displayLink.removeFromRunLoop(NSRunLoop.mainRunLoop(), forMode: NSDefaultRunLoopMode)
-        displayLink = nil
+        self.displayLink.removeFromRunLoop(NSRunLoop.mainRunLoop(), forMode: NSDefaultRunLoopMode)
     }
     
-    func tick(displayLink: CADisplayLink) {
-        print("hi")
+    @objc func tick(displayLink: CADisplayLink) {
+        print(displayLink.timestamp)
     }
 }
