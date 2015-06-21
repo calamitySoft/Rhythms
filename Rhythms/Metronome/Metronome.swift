@@ -75,7 +75,7 @@ class Metronome {
         print("tick \(displayLink.timestamp)")
     }
     
-    // MAKR: Calculate beat
+    // MARK: Calculate beat
     private func beatRelationshipWithElapsedTime(elapsedTime: CFTimeInterval) -> MetronomeBeatRelationship {
         let priorBeatTime       = beatTimePriorToElapsedTime(elapsedTime)
         let subsequentBeatTime  = beatTimeSubsequentToElapsedTime(elapsedTime)
