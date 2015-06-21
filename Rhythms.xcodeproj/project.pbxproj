@@ -16,6 +16,9 @@
 		709515661B36648200E8F163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 709515641B36648200E8F163 /* LaunchScreen.storyboard */; };
 		709515711B36648200E8F163 /* RhythmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709515701B36648200E8F163 /* RhythmsTests.swift */; };
 		7095157C1B36648200E8F163 /* RhythmsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7095157B1B36648200E8F163 /* RhythmsUITests.swift */; };
+		7095158A1B36664A00E8F163 /* Metronome in Resources */ = {isa = PBXBuildFile; fileRef = 709515891B36664A00E8F163 /* Metronome */; };
+		7095158B1B36664A00E8F163 /* Metronome in Resources */ = {isa = PBXBuildFile; fileRef = 709515891B36664A00E8F163 /* Metronome */; };
+		7095158C1B36664A00E8F163 /* Metronome in Resources */ = {isa = PBXBuildFile; fileRef = 709515891B36664A00E8F163 /* Metronome */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 		709515771B36648200E8F163 /* RhythmsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RhythmsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7095157B1B36648200E8F163 /* RhythmsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhythmsUITests.swift; sourceTree = "<group>"; };
 		7095157D1B36648200E8F163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		709515891B36664A00E8F163 /* Metronome */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Metronome; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 				709515591B36648200E8F163 /* GameScene.sks */,
 				7095155B1B36648200E8F163 /* GameScene.swift */,
 				7095155D1B36648200E8F163 /* GameViewController.swift */,
+				709515891B36664A00E8F163 /* Metronome */,
 				7095155F1B36648200E8F163 /* Main.storyboard */,
 				709515621B36648200E8F163 /* Assets.xcassets */,
 				709515641B36648200E8F163 /* LaunchScreen.storyboard */,
@@ -235,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7095155A1B36648200E8F163 /* GameScene.sks in Resources */,
+				7095158A1B36664A00E8F163 /* Metronome in Resources */,
 				709515661B36648200E8F163 /* LaunchScreen.storyboard in Resources */,
 				709515631B36648200E8F163 /* Assets.xcassets in Resources */,
 				709515611B36648200E8F163 /* Main.storyboard in Resources */,
@@ -245,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7095158B1B36664A00E8F163 /* Metronome in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7095158C1B36664A00E8F163 /* Metronome in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
