@@ -13,7 +13,7 @@ struct MetronomeConfiguration {
     let leadingLeniency: NSTimeInterval
     let trailingLeniency: NSTimeInterval
     
-    init(bpm: Int, leadingLeniency: NSTimeInterval = 0.2, trailingLeniency: NSTimeInterval = 0.5) {
+    init(bpm: Int, leadingLeniency: NSTimeInterval = 0.2, trailingLeniency: NSTimeInterval = 0.2) {
         self.bpm = bpm
         self.leadingLeniency = leadingLeniency
         self.trailingLeniency = trailingLeniency
